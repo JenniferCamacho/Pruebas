@@ -1,3 +1,21 @@
-h1{
-    color: blueviolet;
+/* div > h1 hijos
+div h1 descendientes
+*/
+divgit{ 
+    color: white;
+}
+
+/* contactanos id */
+#italia {
+    color: green;
+}
+
+/* clases */
+.error{
+    color: red;
+}
+#encabezado{
+    width: 50%;
+    height: 80px;
+    background: red;
 }
