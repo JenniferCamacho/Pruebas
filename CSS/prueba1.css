@@ -19,3 +19,77 @@ divgit{
     height: 80px;
     background: red;
 }
+/* pseudo clase */
+a:hover {
+    color:chartreuse
+}
+
+#parrafo {
+    background-color: yellow;
+    color:blueviolet
+
+}
+#parrafo:hover{
+    background-color: blueviolet;
+    color: red;
+
+}
+
+li:first-child{
+    color: blueviolet;
+}
+
+#animes > li:first-child{
+    color: red;
+}
+/* Negrita */
+#animes > li:nth-child(2){
+    font-weight: bold;
+    color: blueviolet;
+}
+
+#animes:hover > li:last-child{
+    color:chocolate
+    
+}
+
+li:hover{
+    /* color:blue */
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+*{
+    border: 1px solid red;
+}
+
+button{
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+body{
+    background: #d16ba5;
+}
+
+/* form [type="email"]{
+    background: #db2745;
+} */
+
+/* focus?? */
+input:focus [type="email"]{
+    background: white;
+    color:darkblue
+}
+
+/* RGBA */
+/* box model*/
+
+p{
+    /* border-width: 10px ;
+    border-color: yellow;
+    border-style: solid; */
+    border-top: 10px dashed red;
+    /* top, bottom, left, right, border-radius*/
+    border-top-left-radius: 20px;
+
+}
