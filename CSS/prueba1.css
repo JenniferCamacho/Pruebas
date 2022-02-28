@@ -1,35 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ul li{
+    color: black;
+    display: inline;
+    margin-right: 15px;
 }
 
-p{
-    background: pink;
-    border: 10px solid rebeccapurple;
-    margin: 10px 20px 30px 50px;
-    text-align: justify;
-
-    text-transform: capitalize;
-    letter-spacing: 5px;
-    /* line-height: 10px; */
-
-    font-family: arial;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-form> fieldset{
-    background: rgb(236, 226, 226);
-    padding: 10px;
-    border: 0;
-
-}
-a{
-    /* quita linea del link */
+ul a{
+    background: blue;
     text-decoration: none;
 }
-i{
-    size: 40px;
-}
+
