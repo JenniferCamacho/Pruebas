@@ -1,11 +1,44 @@
-ul li{
-    color: black;
-    display: inline;
-    margin-right: 15px;
+.contenedor{
+    background: rgb(182, 14, 140);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 50px auto 50px / 1fr 2fr;
+      /* marco */
+    gap: 20px;
 }
 
-ul a{
+.header{
+    background: greenyellow;
+    grid-row: 1/2;
+    grid-column: 1/3;
+
+}
+.menu{
+    background: red;
+    grid-row: 2/4;
+    grid-column: 1/2;
+
+}
+.contenido{
+    background: yellow;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+
+
+
+}
+.footer{
     background: blue;
-    text-decoration: none;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    
 }
-
+.cajita{
+    width: 20vw;
+    height: 30vh;
+    background: rgb(12, 1, 1);
+}
