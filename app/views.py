@@ -4,11 +4,11 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def hola(request):
-    return HttpResponse ('hola')
-
 def peliculas(request):
     return HttpResponse ('Peliculas')
 
 def categorias(request):
     return HttpResponse ('Categorias')
+
+def categoria(request, id):
+    return HttpResponse (f'Esta es una Categoria {id}')
