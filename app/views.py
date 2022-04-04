@@ -1,4 +1,5 @@
 from http.client import HTTPResponse
+from multiprocessing import context
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -7,8 +8,23 @@ from django.http import HttpResponse
 def peliculas(request):
     return HttpResponse ('Peliculas')
 
+def inicio(request):
+    return render (request,'app/inicio.html')
+
 def categorias(request):
-    return HttpResponse ('Categorias')
+
+    contexto={
+        'titulo':'Blockbuster',
+        'categorias':[
+        {'id':1, 'nombre': 'terror'},
+        {'id':2, 'nombre': 'romance'},
+        {'id':3, 'nombre': 'aventuras'},
+        {'id':4, 'nombre': 'Comedia'},
+
+        ]
+    }
+    
+    return render(request, 'app/categorias.html',contexto)
 
 def categoria(request, id):
     return HttpResponse (f'Esta es una Categoria {id}')
