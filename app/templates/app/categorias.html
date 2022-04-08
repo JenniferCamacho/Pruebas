@@ -12,5 +12,18 @@
     {%else%}
     <h1>No hay titulo</h1>
     {%endif%}
+    
+    {% extends 'app/base.html' %} {% block contenido %}
+
+<h1>Categorias</h1>
+<ul id="lista-categorias">
+  {% for categoria in categorias %}
+  <li>
+    <a href="{% url 'app:categoria' categoria.id %}"></a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %} {% block titulo %} Categorias {% endblock %}
 </body>
 </html>
